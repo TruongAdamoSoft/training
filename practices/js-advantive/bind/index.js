@@ -6,12 +6,14 @@ const person = {
     console.log(`Hello, I'm ${this.name} and I'm ${this.age} years old.`);
   },
 };
-const greet = null; // TODO: Implement code here (remove null)
+const greet = person.introduce.bind(person); 
 greet(); // Output: Hello, I'm John and I'm 30 years old.
+
+
 //Bài 2:
 function add(a, b, c) {
   return a + b + c;
 }
 
-const addWithDefault = null; // TODO: Implement code here (remove null)
+const addWithDefault = add.bind({}, 2, 3); 
 console.log(addWithDefault(4)); // Output: 9 (2 + 3 + 4)

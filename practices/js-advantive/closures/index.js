@@ -5,6 +5,19 @@ và trả về một đối tượng có thể gọi các phương thức napTie
 
 function createAccount(initialBalance) {
   // TODO: Implement code here
+  let currentAmount = initialBalance
+  return {
+    topUp: function(amount) {
+      // validate here
+      currentAmount += amount;
+      console.log("Nạp tiền thành công. Số dư hiện tại: " + currentAmount);
+    },
+    withDraw: function(amount) {
+      // validate here
+      currentAmount -= amount;
+      console.log("Rút tiền thành công. Số dư hiện tại: " + currentAmount);
+    }
+  }
 }
 
 const account = createAccount(1000);
