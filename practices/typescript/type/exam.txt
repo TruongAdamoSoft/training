@@ -1,0 +1,18 @@
+Mỗi bài tập tạo một file ex-số thứ tự bài.ts (ex-01.ts) 
+
+Bài 1:Viết class user gồm fistName, lastName,age và một hàm getAverageAge(users) lấy một mảng đối tượng có thuộc tính tuổi và trả về tuổi trung bình.
+có sử dụng method reduce của array.
+
+Bài 2: Viết một function để update giá trị của một object (sử dụng các kiến thức typescipt đã học)
+
+input:
+- một object có các thuộc tính name: string, age: number, gender: enum(male, female, other)
+- propertyName (field cần thay đổi)
+- newValue
+
+output: 
+- object với thuộc tính đã được thay đổi
+
+Bài 3: Viết một class Employee với các thông tin firstName (thuộc tính ko thể thay đổi), lastName (thuộc tính ko thể thay đổi), age, position, salary
+Với các method, getter, setter của các thuộc tính, showInfo()- trả về chuỗi firstName + lastName, updateAge(age: number) , increaseSalary(percentage: number) (sử dụng try catch ở đây để handle error)
+
