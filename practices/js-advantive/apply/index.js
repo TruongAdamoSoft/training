@@ -6,4 +6,6 @@ function calculateSum(a, b, c) {
 
 const numbers = [1, 2, 3];
 // TODO: Implement code here
+const sum = calculateSum.apply({}, numbers);
+
 console.log(sum); //Output: 6

@@ -10,3 +10,7 @@ const person2 = { name: "Bob" };
 // TODO: Implement code here
 //Output: Hi, I'm Alice
 //Output: Hello, I'm Bob
+
+greet.call(person1, "Hi");
+greet.call(person2, "Hello");
+
