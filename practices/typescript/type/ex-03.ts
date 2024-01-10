@@ -13,14 +13,14 @@ class Employee{
         this._salary = salary;
     }
 
-    public get name(){
+    public get name(): string{
         return this._firstName;
     }
     
     public set name(newFirstName: string){
         this._firstName = newFirstName;
     }
-    public get age(){
+    public get age(): number{
         return this._age;
     }
 
@@ -31,7 +31,7 @@ class Employee{
         this._age = newAge;
     }
 
-    public get position(){
+    public get position(): string{
         return this._position
     }
 
@@ -39,7 +39,7 @@ class Employee{
         this._position = newPosition;
     }
 
-    public get salary(){
+    public get salary(): number{
         return this._salary;
     }
 
@@ -47,7 +47,7 @@ class Employee{
         this._salary = newSalary;
     }
 
-    increasedSalary(percentage: number){
+    increasedSalary(percentage: number): number{
         if(this._salary <= 0 ){
             throw new Error("can't be increased")
         }

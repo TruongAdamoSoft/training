@@ -1,21 +1,22 @@
-enum Gender {MALE='male', FEMALE='female', OTHER='other'};
+export enum EGender {MALE='male', FEMALE='female', OTHER='other'};
 
-type Person = {
+export type TPerson = {
     name: string,
     age: number,
-    gender: Gender
+    gender: EGender
 }
 
-const human1: Person = {
+const human: TPerson = {
     name: 'logi',
     age: 20,
-    gender: Gender.MALE
+    gender: EGender.MALE
 }
 
-function updateInfo(human: Person, updateFields: keyof Person, newValue: number | string | Gender){
+export function updateInfo(human: TPerson, updateFields: keyof TPerson, newValue: number | string | EGender){
     // human[updateFields] = newValue;
 
     return {...human, [updateFields]: newValue};
 }
-const human2 = updateInfo(human1, 'age', 30);
-console.log(human2)
+const otherGuy = updateInfo(human, 'age', 30);
+console.log(otherGuy)
+

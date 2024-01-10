@@ -12,7 +12,7 @@ const Student: {name: string, age: number, gender: string} = {
 }
 
 //Optional type
-const Person1: {name: string, age: number, gender?: string} = {
+const hocSinh: {name: string, age: number, gender?: string} = {
     name: 'Alex',
     age: 22
 }
@@ -39,7 +39,7 @@ interface Player {
     age: number,
     gender?: string
 }
-const player1 = {
+const koreaPlayer = {
     name: 'faker',
     age: 28
 } as Player
