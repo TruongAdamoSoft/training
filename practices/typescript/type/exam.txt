@@ -16,3 +16,20 @@ output:
 Bài 3: Viết một class Employee với các thông tin firstName (thuộc tính ko thể thay đổi), lastName (thuộc tính ko thể thay đổi), age, position, salary
 Với các method, getter, setter của các thuộc tính, showInfo()- trả về chuỗi firstName + lastName, updateAge(age: number) , increaseSalary(percentage: number) (sử dụng try catch ở đây để handle error)
 
+Bài 4: Tạo một class person với các thuộc tính: name, age, address. Tạo một class Student kế thừa từ person và thêm thuộc tính studentId 
+Viết method in ra thông tin của student.
+
+Bài 5: Định nghĩa một class FootballPlayer với các thuộc tính: name, position, và goalsScored.
+Tạo một class FootballTeam với thuộc tính players (mảng các cầu thủ) và phương thức calculateTotalGoals để tính tổng số bàn thắng của đội.
+
+Bài 6: Cho class generic ObjectManager<T>.  
+Với các method
+addItem(item): Thêm một đối tượng vào danh sách.
+removeItem(item): Xóa một đối tượng khỏi danh sách.
+getAllItems(): Trả về toàn bộ danh sách đối tượng.
+getItemById(id): Tìm và trả về một đối tượng dựa trên id.
+clear(): Xóa toàn bộ danh sách.
+
+Tạo một interface Person với các thuộc tính id, name, age.
+
+Sử dụng class ObjectManager để quản lý các Person 
