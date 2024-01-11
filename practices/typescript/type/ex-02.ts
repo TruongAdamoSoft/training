@@ -12,7 +12,7 @@ const human: TPerson = {
     gender: EGender.MALE
 }
 
-export function updateInfo(human: TPerson, updateFields: keyof TPerson, newValue: number | string | EGender){
+export function updateInfo(human: TPerson, updateFields: keyof TPerson, newValue: number | string | EGender): TPerson{
     // human[updateFields] = newValue;
 
     return {...human, [updateFields]: newValue};

@@ -9,7 +9,7 @@ class Person{
         this._address = address;
     }
 
-    public get name(){
+    public get name(): string{
         return this._name;
     }
 
@@ -20,7 +20,7 @@ class Person{
         this._name = newName
     }
 
-    public get age(){
+    public get age(): number{
         return this._age;
     }
 
@@ -31,7 +31,7 @@ class Person{
         this._age = newAge
     }
 
-    public get address(){
+    public get address(): string{
         return this._address;
     }
 }

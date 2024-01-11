@@ -1,0 +1,34 @@
+1. package.json
+	- là một file config của ứng dụng, ta có thể khởi tạo file bằng câu lệnh npm init với các thuộc tính default
+	- các thành phần cơ bản trong file package.json:
+		+ name, version là thành phần cơ bản và quan trọng của ứng dụng và chúng không được thay đổi khi mình cần xuất file
+		+ main là thành phần chỉ là tên file xử lý chính của app, và sẽ được khởi tại mặc định là index.js nếu main không được thiết lập
+		+scripts: là thành phần chứa các câu lệnh sẽ được chạy, sử dụng là câu lệnh npm run {tên script}
+		+dependencies: là các thư viện dùng trong ứng dụng
+		+devDependencies: là các thư viện chỉ được dùng cho dev và test, chúng sẽ không được cài khi người dùng thành tải ứng dụng
+và còn nhiều các thành phần khác: description, license, author, ….
+
+2. npm <node package manager>
+	- là trình quản lý các thư viện trong ứng dụng nodejs, giúp cài đặt, quản lý và các thư viện và publish ứng dụng
+	- npm được cài đặt cùng với nodejs
+
+3. npx <node package executor>
+	- giống như npm, npx cũng được gọi để sử dụng các thư viện cho ứng dụng
+	- npx chỉ gọi sử dụng các câu lệnh duy nhất 1 lần
+
+4. nvm <node’s version manager>
+	- là trình quản lý các phiên bản của nodejs, sử dụng khi cần chuyển qua lại các phiên bản
+	- cài đặt với câu lệnh nvm install {version}
+
+5. middleware
+	- là các hàm xử lý các request và trả về các respone trước khi đưa vào xử lý logic
+	- khi nhận đc request từ client, các hàm middleware sẽ lần lượt được xử lý cho đến khi kết thúc hoặc gặp lỗi, chúng xử lý hết các câu lệnh, có thể thay đổi res và req
+	- có 5 loại middleware:	application-level, router-level ,  error-handling, build-in, third-party
+	+application-level thể hiện các hàm ở mức độ web app, thể hiện bằng các câu lệnh app.METHOD
+	+router-level giống như application-level nhưng thấp hơn, sử dụng bằng express.Router(). có thể export từ một file khác và cần sử dụng app.use(‘/‘, router) trước khi chúng lên application-level
+	+error-handling: là các hàm xử lý lỗi trong ứng dụng, cần 4 thành phần (err, req, res, next) để ứng dụng có thể nhận diện được
+	+build-in middleware: chỉ còn 1 middleware duy nhất là express.static để xử lý các thành phần tĩnh trên ứng dụng, xuất phát từ server.static
+	+third-party middleware: là các third-party middleware được cài đặt bằng câu lệnh npm install {package-name} để chúng xử lý các vấn đề trong expressJS
+	
+
+

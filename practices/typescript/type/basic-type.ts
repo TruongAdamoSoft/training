@@ -12,7 +12,7 @@ const Student: {name: string, age: number, gender: string} = {
 }
 
 //Optional type
-const hocSinh: {name: string, age: number, gender?: string} = {
+const Employee: {name: string, age: number, gender?: string} = {
     name: 'Alex',
     age: 22
 }
@@ -26,15 +26,15 @@ const Pupil: {readonly name: string, age: number} = {
 //Type aliases
 type Age = number;
 const studentAge: Age = 22;
-type Student1 = {name: string, age: number, class: string};
-const student: Student1 = {
+type TStudent = {name: string, age: number, class: string};
+const student: TStudent = {
     name: 'luffy',
     age: 21,
     class: '12A4'
 }
 
 //Type assertions
-interface Player {
+interface IPlayer {
     name: string,
     age: number,
     gender?: string
@@ -42,7 +42,7 @@ interface Player {
 const koreaPlayer = {
     name: 'faker',
     age: 28
-} as Player
+} as IPlayer
 
 
 console.log();

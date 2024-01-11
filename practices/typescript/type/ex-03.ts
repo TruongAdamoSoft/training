@@ -48,10 +48,15 @@ class Employee{
     }
 
     increasedSalary(percentage: number): number{
-        if(this._salary <= 0 ){
-            throw new Error("can't be increased")
+        try{
+            if(this._salary <= 0 ){
+                throw new Error("can't be increased")
+            }
+            return this._salary * percentage;
+        } catch(error){
+            console.log(`Some errors occured ${error}`);
         }
-        return this._salary * percentage;
+        return this._salary
     }
 
     showInfo(): string{

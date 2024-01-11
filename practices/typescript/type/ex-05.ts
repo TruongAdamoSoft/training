@@ -8,7 +8,7 @@ class FootballPlayer{
         this._position = position;
         this._goalsScored = goalsScored;
     }
-    addScore(){
+    addScore(): void{
         this._goalsScored++
     }
 
@@ -25,18 +25,18 @@ class FootballTeam{
         this.players = []   
     }
     
-    addPlayer(player: FootballPlayer){
+    addPlayer(player: FootballPlayer): void{
         this.players.push(player)
     }
 
     getAllScored(): number{
         let totalScored: number = 0;
         // console.log(this.players)
-        for(const player of this.players){
+        // for(const player of this.players){
             // console.log(player.goalsScored())
-            totalScored = this.players.reduce((total, player) => total + player.goalsScored(), 0)
+        totalScored = this.players.reduce((total, player) => total + player.goalsScored(), 0)
             // total += player.goalsScored()
-        }
+        // }
         return totalScored
     }
 }

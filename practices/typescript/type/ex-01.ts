@@ -21,5 +21,5 @@ export function getAverageAge(users: User[]): number {
     const totalAge = users.reduce((total, users) => total + users._age, 0);
     return totalAge / users.length
 }
-const func = getAverageAge(users)
-console.log(func)
+const avrAgeResult = getAverageAge(users)
+console.log(avrAgeResult)
